@@ -227,7 +227,7 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	text-align: left;
-	width: 150px;
+	max-width: 150px;
 	padding: 0 5px;
 	border-radius: 3px;
 	background: rgba(#fff, 0);
@@ -254,11 +254,17 @@ h2 {
 // Beer mobile tweaks
 
 @media (max-width: 680px){
+	.section:first-child {
+		margin-top: 5vh;
+	}
+
 	.beer {
-		width: 100%;
+		width: 48%;
+		font-size: 0.9em;
 
 		h2 {
 			text-align: center;
+			font-size: 2.5rem;
 		}
 		.beer-data__row {
 			margin: 0 auto;
@@ -269,6 +275,14 @@ h2 {
 	}
 	.beer-pic {
 		margin: 10px auto 30px;
+		width: 80px;
+		height: 140px;
+	}
+	.beer-pic__handle {
+		left: 75px;
+		top: 25%;
+		width: 30px;
+		height: 70px;
 	}
 }
 
